@@ -70,21 +70,86 @@ General Styles
 Page Layout
 ===========================================
 */
-
-.intro {
-	flex: 30%;
-	background: #faf;
-	justify-content: space-around;
-	margin-right: 20px;
+html {
+	background: url(honey.jpg);
+	/* First background color #B78AE3
+	*/
 }
 
+/*=========================================
+	Intro
+===========================================
+*/
+.intro {
+	flex: 30%;
+	background: #E5C2A4;
+	justify-content: space-around;
+	margin-right: 20px;
+	
+}
+
+.summary {
+	display : flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.summary p:last-child {
+	margin-bottom: 42px;
+}
+/*=========================================
+	Main
+===========================================
+*/
 .main {
+	background: black; 
 	flex: 40%;
 	justify-content: center;
 	align-items: center;
+	height: 624px;
+	overflow-y: auto;
+}
+.main p {
+	color: #E5C2A4;
+}
+/*main color 1 #928CBD;
+*/
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
 }
 
-.preamble, .explanation, .participation, .benefits, .requirements {
+footer a {
+	margin: 0 10px 0 10px;
+}
+/*=========================================
+	Sidebar
+===========================================
+*/
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #E5C2A4;
+	margin-left: 20px;
+	width: 30%;
+}
+.design-selection, .design-archives, .zen-resources {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+li {
+	margin: 10px 0 10px 10px;
+}
+.select, .archives, .resources {
+	margin-top: 20px;
+	padding-right: 10px;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements, .summary {
 	margin: 20px 0 20px 0;
 	display: flex;
 	flex-direction: column;
@@ -93,20 +158,54 @@ Page Layout
 }
 
 .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
-	flex: 60%;
 	width: 70%;
-	flex-direction: column;
 	align-self: flex-end;
 	margin: 10px 0 10px 0;
-
+	padding: 10px 20px 0 0;
 }
-.sidebar {
-	margin-left: 20px;
-	flex: 30%;
+
+
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+h2 {
+	font-size: 24px;
+	font-style: italic; 
+	margin: 0 0 32px 10px;
+	
 }
 
 h3 {
-	flex: 100%;
-  background: gray;
+	font-size: 20px;
+	font-style: italic;
+	
+	padding: 5px 10px 5px 10px;
+	text-decoration: underline;
+	color: gray;
+	
+	/* first background color #B78AE3 */
 }
 
+.summary p {
+	margin: 10px 0 10px 15px;
+}
+
+p {
+	font-size: 16px;
+}
+
+/*=========================================
+	Aesthetic
+===========================================
+*/
+
+a {
+	color: #a4aee5; 
+}
+a:hover {
+	text-decoration: none;
+}
